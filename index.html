@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roots of Chaos Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<button id="mobile-menu-button" onclick="toggleSidebar()">
+    ☰ Characters
+</button>
+    
+<div class="sidebar">
+    <h1 class="site-title">
+    The Roots of Chaos
+    </h1>    
+    <h2 class="book-title">A Day of Fallen Night</h2>
+        <button id="btn-dumai" style="--c:#33cccc" onclick="toggleRoute('dumai')">Dumai</button>
+        <button id="btn-glorian" style="--c:#ff3333" onclick="toggleRoute('glorian')">Glorian</button>
+        <button id="btn-tunuva" style="--c:#ffff33" onclick="toggleRoute('tunuva')">Tunuva</button>
+        <button id="btn-wulf" style="--c:#66cc66" onclick="toggleRoute('wulf')">Wulf</button>
+    <h2 class="book-title">Among the Burning Flowers</h2>    
+        <button id="btn-marosa" style="--c:#993399" onclick="toggleRoute('marosa')">Marosa</button>
+        <button id="btn-melaugo" style="--c:#663399" onclick="toggleRoute('melaugo')">Melaugo</button>
+        <button id="btn-aubrecht" style="--c:#ff6633" onclick="toggleRoute('aubrecht')">Aubrecht</button>
+</div>
+
+<div id="map"></div>
+
+<div id="overlay" onclick="toggleSidebar()"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
