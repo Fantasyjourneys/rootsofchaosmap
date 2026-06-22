@@ -31,6 +31,10 @@ const routes = {
     marosa: L.imageOverlay('Marosa.png', bounds, { opacity: 0 }),
     melaugo: L.imageOverlay('Melaugo.png', bounds, { opacity: 0 }),
     aubrecht: L.imageOverlay('Aubrecht.png', bounds, { opacity: 0 }),
+    tane: L.imageOverlay('Tane.png', bounds, { opacity: 0 }),
+    ead: L.imageOverlay('Ead.png', bounds, { opacity: 0 }),
+    niclays: L.imageOverlay('Niclays.png', bounds, { opacity: 0 }),
+    loth: L.imageOverlay('Loth.png', bounds, { opacity: 0 }),
 };
 
 /* ADD ROUTES TO MAP */
@@ -41,6 +45,10 @@ routes.wulf.addTo(map);
 routes.marosa.addTo(map);
 routes.melaugo.addTo(map);
 routes.aubrecht.addTo(map);
+routes.tane.addTo(map);
+routes.ead.addTo(map);
+routes.niclays.addTo(map);
+routes.loth.addTo(map);
 
 /* 5. TOGGLE FUNCTION */
 function toggleRoute(name) {
@@ -114,6 +122,10 @@ window.addEventListener("load", () => {
     updateButtonState("marosa", false);
     updateButtonState("melaugo", false);
     updateButtonState("aubrecht", false);
+    updateButtonState("tane", false);
+    updateButtonState("ead", false);
+    updateButtonState("niclays", false);
+    updateButtonState("loth", false);
 });
 
 /* 10. MAP.WHENREADY */
